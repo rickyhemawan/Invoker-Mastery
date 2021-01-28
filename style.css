@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #ffc400 #64ffda #ea80fc */
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px =62.5% */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background: black;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.header-main {
+  text-align: center;
+  width: 100%;
+}
+
+.heading-main {
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* Containers */
+.container-qwe {
+  margin: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container-skills {
+  width: 50vw;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card-skills {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+
+  background-color: #1c1c1c;
+  padding: 4px 8px 4px 4px;
+  margin: 4px;
+  border-radius: 12px;
+}
+
+.card-skills img {
+  width: 4rem;
+  border-radius: 30%;
+  flex: 0;
+}
+
+.card-skills h2 {
+  width: 2rem;
+  flex: 1;
+}
+.skill-usage {
+  text-align: end;
+}
+
+/* Center all items */
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle Image */
+.image-cropper {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.shadow-quas {
+  box-shadow: 0 0 2rem 5px #64ffda;
+}
+.shadow-wex {
+  box-shadow: 0 0 2rem 5px #ea80fc;
+}
+.shadow-exort {
+  box-shadow: 0 0 2rem 5px #ffc400;
+}
+
+/* Rainbow Text */
+.quas-wex-exort-text {
+  background: -webkit-linear-gradient(180deg, #ffc400, #ea80fc, #64ffda);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+.rotate {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
