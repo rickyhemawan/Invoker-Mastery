@@ -17,20 +17,32 @@
       </header>
 
       <main>
-        <div class="container-qwe">
-          <div class="image-cropper rotate shadow-quas">
-            <img src="images/Quas.jpeg" alt="avatar" class="profile-pic" />
-          </div>
-          <div class="image-cropper rotate shadow-wex">
-            <img src="images/Wex.jpeg" alt="avatar" class="profile-pic" />
-          </div>
-          <div class="image-cropper rotate shadow-exort">
-            <img src="images/Exort.jpeg" alt="avatar" class="profile-pic" />
-          </div>
+        <div id="element-invocation" class="container-qwe">
+          <!-- content added dynamically here -->
         </div>
 
         <div id="skill-list" class="container-skills">
           <!-- content added dynamically here -->
+        </div>
+
+        <div id="play-main" class="container-play">
+          <p>
+            Invoke your first skill to play! <br />
+            Press <span class="quas-text big-text">Q</span>,
+            <span class="wex-text big-text">W</span>, or
+            <span class="exort-text big-text">E</span> to change element! <br />
+            Press <span class="gradient-text big-text">R</span> to
+            <span class="gradient-text big-text">Invoke</span> your spell!
+          </p>
+        </div>
+
+        <div id="feedback-message" class="container-play">
+          <!-- content added dynamically here -->
+          <p class="feedback-text">At least 3 element to Invoke!</p>
+        </div>
+
+        <div id="play-button" class="btn">
+          <button onclick="hidePlayButton()">Play</button>
         </div>
       </main>
     </div>

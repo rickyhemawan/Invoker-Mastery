@@ -32,6 +32,11 @@ h2 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .header-main {
   text-align: center;
   width: 100%;
@@ -59,6 +64,15 @@ h2 {
   flex-wrap: wrap;
 }
 
+.container-play {
+  width: 50vw;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Cards */
 .card-skills {
   width: 40rem;
@@ -71,6 +85,11 @@ h2 {
   border-radius: 12px;
 }
 
+.card-skills:hover {
+  background-color: #2f2f2f;
+  transform: scale(1.1, 1.1);
+}
+
 .card-skills img {
   width: 4rem;
   border-radius: 30%;
@@ -81,8 +100,43 @@ h2 {
   width: 2rem;
   flex: 1;
 }
+
+.skill-title {
+  margin-left: 1rem;
+  text-align: start;
+}
+
 .skill-usage {
   text-align: end;
+}
+
+/* Buttons */
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+button,
+button:visited,
+button:link {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #2f2f2f;
+  width: 40%;
+  padding: 8px;
+  color: white;
+  font-size: 4rem;
+  font-weight: 900;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #3f3f3f;
+  transform: scale(1.1, 1.1);
 }
 
 /* Center all items */
@@ -125,6 +179,33 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.big-text {
+  font-size: 3.2rem;
+}
+
+.quas-text {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+.wex-text {
+  color: #ea80fc;
+  font-weight: bold;
+}
+
+.exort-text {
+  color: #ffc400;
+  font-weight: bold;
+}
+
+.gradient-text {
+  color: yellowgreen;
+}
+
+.feedback-text {
+  font-size: 3rem;
 }
 
 /* Animations */
